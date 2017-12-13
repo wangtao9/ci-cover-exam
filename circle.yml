@@ -20,6 +20,7 @@ test:
     pre:
         - pip install --upgrade pip
         - pip install --user cpp-coveralls
+        - pip install --user pyyaml
     override:
         - make
         - ./test_all
