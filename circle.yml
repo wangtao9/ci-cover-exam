@@ -1,12 +1,10 @@
 machine:
     environment:
-        #COVERALLS_REPO_TOKEN: b905c9baa17ad65ca2701c34f7b7fb18f8c51dcf
         COVERALLS_REPO_TOKEN: NgH5oPelDn5E3vAKyDEobF2ZAaJdjq1t9
-        COVERALLS_PARALLEL: true
+        #COVERALLS_PARALLEL: true
 
 notify:
     webhooks:
-        #- url: https://coveralls.io/webhook?repo_token=b905c9baa17ad65ca2701c34f7b7fb18f8c51dcf
         - url: https://coveralls.io/webhook?repo_token=NgH5oPelDn5E3vAKyDEobF2ZAaJdjq1t9
 
 
@@ -24,7 +22,6 @@ test:
     override:
         - make
         - ./test_all
-          #- coveralls
     ## Customize test commands
     #post:
     #    - bundle exec rake coveralls:push
