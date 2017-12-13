@@ -1,0 +1,7 @@
+general:
+    build_dir: ./ 
+
+test:
+    override:
+        - make
+        - ./test_all
