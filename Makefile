@@ -18,3 +18,5 @@ all: $(OBJS) $(TEST_OBJS)
 clean:
 	rm *.o test/*.o -f
 	rm test_all -f
+	rm *.gc?? -f
+	rm test/*.gc?? -f
