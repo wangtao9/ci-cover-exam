@@ -21,5 +21,5 @@ test:
         - ./test_all
           #- coveralls
     ## Customize test commands
-    post:
-        - bundle exec rake coveralls:push
+    #post:
+    #    - bundle exec rake coveralls:push
