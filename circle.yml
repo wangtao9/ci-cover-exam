@@ -16,4 +16,4 @@ test:
     override:
         - make
         - ./test_all
-        - coveralls
+          #- coveralls
