@@ -1,3 +1,12 @@
+machine:
+    environment:
+        COVERALLS_REPO_TOKEN: b905c9baa17ad65ca2701c34f7b7fb18f8c51dcf
+        COVERALLS_PARALLEL: true
+
+notify:
+    webhooks:
+        - url: https://coveralls.io/webhook?repo_token=b905c9baa17ad65ca2701c34f7b7fb18f8c51dcf
+
 general:
     build_dir: ./ 
 
