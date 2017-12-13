@@ -9,6 +9,7 @@ notify:
         #- url: https://coveralls.io/webhook?repo_token=b905c9baa17ad65ca2701c34f7b7fb18f8c51dcf
         - url: https://coveralls.io/webhook?repo_token=NgH5oPelDn5E3vAKyDEobF2ZAaJdjq1t9
 
+
 ## Don't have CircleCI create coverage in an unexpected place, as coveralls wouldn't be able to find it.
 general:
     build_dir: ./ 
@@ -16,6 +17,8 @@ general:
         - "coverage"
 
 test:
+    pre:
+        - pip install --user cpp-coveralls
     override:
         - make
         - ./test_all
@@ -23,3 +26,5 @@ test:
     ## Customize test commands
     #post:
     #    - bundle exec rake coveralls:push
+    post:
+        - coveralls -e test
