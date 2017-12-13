@@ -19,8 +19,8 @@ int main(int argc, char **argv)
 	}
 
 	printf("Success!\n");
-	//return 0;
-	return 1;
+	return 0;
+	//return 1;
 fail:
 	fprintf(stderr, "Failed test!\n");
 	return -1;
